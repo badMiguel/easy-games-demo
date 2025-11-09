@@ -7,5 +7,5 @@ services:
     ports:
       - "${PORT}:5280"
     volumes:
-      - ./EasyGames/EasyGames.db:/app/EasyGames.db
+      - ./EasyGames/EasyGames.db:/app/EasyGames.db:ro
     restart: unless-stopped
