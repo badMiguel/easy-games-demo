@@ -1,0 +1,11 @@
+services:
+  dotnet_app:
+    build: .
+    container_name: dotnet_app
+    env_file: 
+      - .env
+    ports:
+      - "${PORT}:5280"
+    volumes:
+      - ./EasyGames/EasyGames.db:/app/EasyGames.db
+    restart: unless-stopped

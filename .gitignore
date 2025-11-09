@@ -58,3 +58,5 @@ nunit-*.xml
 EasyGames/Migrations
 .vs
 *.csproj.user
+
+.env
